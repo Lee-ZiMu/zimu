@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.zimu</groupId>
+        <artifactId>zimu</artifactId>
+        <version>3.6.4</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>zimu-common-log</module>
+        <module>zimu-common-core</module>
+        <module>zimu-common-redis</module>
+        <module>zimu-common-seata</module>
+        <module>zimu-common-swagger</module>
+        <module>zimu-common-security</module>
+        <module>zimu-common-sensitive</module>
+        <module>zimu-common-datascope</module>
+        <module>zimu-common-datasource</module>
+    </modules>
+
+    <artifactId>zimu-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        zimu-common通用模块
+    </description>
+
+</project>

@@ -1,0 +1,33 @@
+# Tomcat
+server:
+  port: 9203
+
+# Spring
+spring: 
+  application:
+    # 应用名称
+    name: zimu-job
+  profiles:
+    # 环境配置
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 60.205.232.39:8748
+        # 命名空间
+        namespace: 1aab51ca-721b-4133-bdb5-2a7738e155b0
+      config:
+        # 配置中心地址
+        server-addr: 60.205.232.39:8748
+        # 用户名
+        username: 'nacos'
+        # 密码
+        password: 'nacos'
+        # 配置文件格式
+        file-extension: yml
+        # 命名空间
+        namespace: 1aab51ca-721b-4133-bdb5-2a7738e155b0
+        # 共享配置
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}

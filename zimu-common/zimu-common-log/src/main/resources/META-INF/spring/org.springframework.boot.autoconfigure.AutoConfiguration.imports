@@ -1,0 +1,2 @@
+com.zimu.common.log.service.AsyncLogService
+com.zimu.common.log.aspect.LogAspect
